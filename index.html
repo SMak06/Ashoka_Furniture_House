@@ -18,6 +18,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
+    <!--<script>src="js/JQuery.js"</script>-->
+    <!--<script>src="js/JQ.json"</script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
     
     
     
@@ -76,7 +79,7 @@
                             
                             
                             <a class="image-popup-no-margins">
-                                <img src="img/bedroom/2.jpg"  onclick="onClick(this)" class="img-fluid img-thumbnail ig">
+                                <img src="img/bedroom/2.jpg"  onclick="onClick(this)" class="img-fluid img-thumbnail" style="margin-bottom: 100px;">
                                 
                             </a>
                         </div>
@@ -90,7 +93,7 @@
 
 							
                             <a class="image-popup-no-margins">
-                            <img src="img/bedroom/1.jpg"  onclick="onClick(this)" class="img-fluid img-thumbnail ig">
+                            <img src="img/bedroom/1.jpg"  onclick="onClick(this)" class="img-fluid img-thumbnail" style="margin-bottom: 100px;">
 							</a>
 
                         </div>
@@ -105,81 +108,126 @@
                      <center><h2 class="subH display-4" style = "color: white">BEDROOM</h2></center>    
                        <div class="row" style="justify-content: center;"> 
                             <link rel="stylesheet" href="css/w3.css">                
-                            <div><a><img src="img/bedroom/2.jpg" onclick="onClick(this)" class="img img-thumbnail"></a></div>
+                            <div class="img-show" data-img="one"><a><img src="img/bedroom/2.jpg" class="img img-thumbnail"></a></div>
                             <!--<div><a><img src="img/bedroom/3.jpg" onclick="onClick(this)" class="img img-thumbnail"></a></div>-->
-                            <div><a><img src="img/bedroom/4.jpg" onclick="onClick(this)" class="img img-thumbnail"></a></div>
-                            <div><a><img src="img/bedroom/5.jpg" onclick="onClick(this)" class="img img-thumbnail"></a></div>
-                            <div><a><img src="img/bedroom/6.jpg" onclick="onClick(this)" class="img img-thumbnail"></a></div>
-                            <div><a><img src="img/bedroom/7.jpg" onclick="onClick(this)" class="img img-thumbnail"></a></div>
-                        
-                           
+                            <div class="img-show2" data-img="two"><a><img src="img/bedroom/4.jpg" class="img img-thumbnail"></a></div>
+                            <div class="img-show3" data-img="three"><a><img src="img/bedroom/5.jpg" class="img img-thumbnail"></a></div>
+                            <div class="img-show4" data-img="four"><a><img src="img/bedroom/6.jpg" class="img img-thumbnail"></a></div>
+                            <div class="img-show5" data-img="five"><a><img src="img/bedroom/7.jpg" class="img img-thumbnail"></a></div> 
+                       </div>                  
+                    
+                    <section id="immersive-container" class="container-fluid con-im" style="margin-top: 25px; display:none;">
+                        <div class="col-md-12">                      
+                            <button type="button" onclick="HideSec()" class="btn btn-danger" style="float:right;">&#10005;</button>    
+                            <center><a><img id="first" src="img/bedroom/2.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="second" src="img/bedroom/4.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="third" src="img/bedroom/5.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="fourth" src="img/bedroom/6.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="fifth" src="img/bedroom/7.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
                         </div>
+                        
+                    </section>
+                    
 
+        </div>      
+                    
+                    
+                    
+            <div class = "container-fluid conP">
                    <center><h2 class="subH display-4" style = "color: white">ACCESSORIES</h2></center>   
                        <div class="row" style="justify-content: center;">                           
                             <!--<div><a><img src="img/accesories/1.jpg" onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
-                            <div><a><img src="img/accesories/2.jpg" onclick="onClick(this)" class="img img-thumbnail pr"></a></div>
+                            <div class="img-showA" data-img="Aone"><a><img src="img/accesories/2.jpg" class="img img-thumbnail pr"></a></div>
                             <!--<div><a ><img src="img/accesories/3.jpg" onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a ><img src="img/accesories/4.jpg" onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
-                            <div><a><img src="img/accesories/5.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>
+                            <div class="img-show2A" data-img="Atwo"><a><img src="img/accesories/5.jpg"  class="img img-thumbnail pr"></a></div>
                             <!--<div><a><img src="img/accesories/6.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/accesories/7.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/accesories/8.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/accesories/9.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/accesories/10.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/accesories/11.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
-                            <div><a><img src="img/accesories/12.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>
+                            <div class="img-show3A" data-img="Athree"><a><img src="img/accesories/12.jpg"  class="img img-thumbnail pr"></a></div>
                             <!--<div><a><img src="img/accesories/13.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/accesories/14.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/accesories/15.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>-->
-                            <div><a><img src="img/accesories/16.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>
+                            <div class="img-show4A" data-img="Afour"><a><img src="img/accesories/16.jpg"  class="img img-thumbnail pr"></a></div>
                             <!--<div><a><img src="img/accesories/17.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/accesories/18.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
-                            <div><a><img src="img/accesories/19.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>
+                            <div class="img-show5A" data-img="Afive"><a><img src="img/accesories/19.jpg"  class="img img-thumbnail pr"></a></div>
                         </div>
+                
+                        <section id="immersive-container2" class="container-fluid con-im" style="margin-top: 25px; display:none;">
+                        <div class="col-md-12">                      
+                            <button type="button" onclick="HideSec2()" class="btn btn-danger" style="float:right;">&#10005;</button>    
+                            <center><a><img id="firstA" src="img/accesories/2.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="secondA" src="img/accesories/5.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="thirdA" src="img/accesories/12.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="fourthA" src="img/accesories/16.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="fifthA" src="img/accesories/19.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                        </div>
+                        
+                    </section>
+                
+            </div>
+            <div class = "container-fluid conP">
                     <center><h2 class="subH display-4" style = "color:white">LIVING</h2></center>    
                        <div class="row" style="justify-content: center;">                           
                             <!--<div><a><img src="img/living/1.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
-                            <div><a><img src="img/living/2.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>
-                            <div><a><img src="img/living/3.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>
+                            <div class="img-showL" data-img="Lone"><a><img src="img/living/2.jpg" class="img img-thumbnail pr"></a></div>
+                            <div class="img-show2L" data-img="Ltwo"><a><img src="img/living/3.jpg"  class="img img-thumbnail pr"></a></div>
                             <!--<div><a><img src="img/living/4.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
-                            <div><a><img src="img/living/5.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>
+                            <div class="img-show3L" data-img="Lthree"><a><img src="img/living/5.jpg" class="img img-thumbnail pr"></a></div>
                             <!--<div><a><img src="img/living/6.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/living/7.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/living/8.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/living/9.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/living/10.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>-->
-                            <div><a><img src="img/living/11.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>
+                            <div class="img-show4L" data-img="Lfour"><a><img src="img/living/11.jpg" class="img img-thumbnail pr"></a></div>
                             <!--<div><a><img src="img/living/12.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/living/13.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
-                            <div><a><img src="img/living/14.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>
+                            <div class="img-show5L" data-img="Lfive"><a><img src="img/living/14.jpg" class="img img-thumbnail pr"></a></div>
                             <!--<div><a><img src="img/living/15.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
                         </div>
+                
+                <section id="immersive-container3" class="container-fluid con-im" style="margin-top: 25px; display:none;">
+                        <div class="col-md-12">                      
+                            <button type="button" onclick="HideSec3()" class="btn btn-danger" style="float:right;">&#10005;</button>    
+                            <center><a><img id="firstL" src="img/living/2.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="secondL" src="img/living/3.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="thirdL" src="img/living/5.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="fourthL" src="img/living/11.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="fifthL" src="img/living/14.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                        </div>
+                        
+                    </section>
+                
+            </div>
+            <div class = "container-fluid conP">
                     <center><h2 class="subH display-4" style = "color:white">DINING</h2></center>    
                        <div class="row"  style="justify-content: center;">                           
-                            <div><a><img src="img/dining/1.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>
+                            <div class="img-showD" data-img="Lone"><a><img src="img/dining/1.jpg" class="img img-thumbnail pr"></a></div>
                             <!--<div><a><img src="img/dining/2.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>-->
                             <!--<div><a><img src="img/dining/3.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>-->
-                            <div><a><img src="img/dining/4.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>
-                            <div><a><img src="img/dining/5.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>
-                            <div><a><img src="img/dining/6.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>
+                            <div class="img-show2D" data-img="two"><a><img src="img/dining/4.jpg" class="img img-thumbnail pr"></a></div>
+                            <div class="img-show3D" data-img="Lthree"><a><img src="img/dining/5.jpg" class="img img-thumbnail pr"></a></div>
+                            <div class="img-show4D" data-img="Lfour"><a><img src="img/dining/6.jpg" class="img img-thumbnail pr"></a></div>
                             <!--<div><a><img src="img/dining/7.jpg"  onclick="onClick(this)" class="img img-thumbnail pr"></a></div>-->
-                            <div><a><img src="img/dining/8.jpg" onclick="onClick(this)"  class="img img-thumbnail pr"></a></div>               
-                        </div>               
-                </div>         
-                 <div id="modal01" class="w3-modal" style="transform: scale(0.8);"; onclick="this.style.display='none'">
-                              <span class="w3-button w3-hover-red w3-display-topright" id="cross" style="color:red;">&times;</span>
-                              <div class="w3-modal-content w3-animate-zoom">
-                                <img id="img01" style="padding-left:-250px; width:900px; height:650px;">
-                              </div>
-                           
-                            </div>  
-        </section>     
-            
-                                
-       
-        
-        
+                            <div class="img-show5D" data-img="Lfive"><a><img src="img/dining/8.jpg" class="img img-thumbnail pr"></a></div>               
+                        </div> 
+                <section id="immersive-container4" class="container-fluid con-im" style="margin-top: 25px; display:none;">
+                        <div class="col-md-12">                      
+                            <button type="button" onclick="HideSec4()" class="btn btn-danger" style="float:right;">&#10005;</button>    
+                            <center><a><img id="firstD" src="img/dining/1.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="secondD" src="img/dining/4.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="thirdD" src="img/dining/5.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="fourthD" src="img/dining/6.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                            <center><a><img id="fifthD" src="img/dining/8.jpg" class="" style="width: 40%; height: auto; display:none;"></a></center>
+                        </div>
+                        
+                    </section>
+                
+        </section> 
         <section id="section-testimonial" class="text-light">
                 <div class="container-fluid con-bg con5">					   
 				    <center><div class="row">
@@ -285,7 +333,7 @@
 
 
         <!-- Modal -->
-            <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -311,6 +359,7 @@
             </div>
 
             <script>
+                
                 var prevScrollpos = window.pageYOffset;
                 window.onscroll = function() {
                 var currentScrollPos = window.pageYOffset;
@@ -322,7 +371,7 @@
                   prevScrollpos = currentScrollPos;
                 }
                 </script>
-        <script>
+            <script>
         $(document).ready(function(){
           // Add smooth scrolling to all links
           $("a").on('click', function(event) {
@@ -348,20 +397,353 @@
           });
         });
         </script>
-
-        <script>
+            <script>
                             function onClick(element) {
                               document.getElementById("img01").src = element.src;
                               document.getElementById("modal01").style.display = "block";
                             }
                             </script>
-
-        <script>
+            <script>
             $('.navbar-nav>li>a').on('click', function(){
             $('.navbar-collapse').collapse('hide');
         });
         </script>
-       
+               
+            <!-- BEDROOM -->
+                    <script>
+                    function HideSec() {
+                        var x = document.getElementById("immersive-container");
+                        x.style.display="none";
+                        var img1 = document.getElementById("first");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("second");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("third");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("fourth");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("fifth");
+                        img1.style.display="none";
+                    }
+                    </script>                   
+                    <script>
+                    $(function() {
+                        $('.img-show').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container').css("display", "block");
+                            $('#first').css("display", "block");
+                            $('#second').css("display", "none");
+                            $('#third').css("display", "none");
+                            $('#fourth').css("display", "none");
+                            $('#fifth').css("display", "none");                            
+                        });
+                    });
+                    </script>                     
+                    <script>
+                    $(function() {
+                        $('.img-show2').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container').css("display", "block");
+                            $('#second').css("display", "block");
+                            $('#first').css("display", "none");
+                            $('#third').css("display", "none");
+                            $('#fourth').css("display", "none");
+                            $('#fifth').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show3').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container').css("display", "block");
+                            $('#third').css("display", "block");
+                            $('#second').css("display", "none");
+                            $('#first').css("display", "none");
+                            $('#fourth').css("display", "none");
+                            $('#fifth').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show4').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container').css("display", "block");
+                            $('#fourth').css("display", "block");
+                            $('#second').css("display", "none");
+                            $('#third').css("display", "none");
+                            $('#first').css("display", "none");
+                            $('#fifth').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show5').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container').css("display", "block");
+                            $('#fifth').css("display", "block");
+                            $('#second').css("display", "none");
+                            $('#third').css("display", "none");
+                            $('#fourth').css("display", "none");
+                            $('#first').css("display", "none");
+                        });
+                    });
+                    </script>
+            <!-- End -->
+            
+            <!-- ACCESSORIES -->            
+                    <script>
+                    function HideSec2() {
+                        var x = document.getElementById("immersive-container2");
+                        x.style.display="none";
+                        var img1 = document.getElementById("firstA");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("secondA");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("thirdA");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("fourthA");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("fifthA");
+                        img1.style.display="none";
+                    }
+                    </script>                   
+                    <script>
+                    $(function() {
+                        $('.img-showA').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container2').css("display", "block");
+                            $('#firstA').css("display", "block");
+                            $('#secondA').css("display", "none");
+                            $('#thirdA').css("display", "none");
+                            $('#fourthA').css("display", "none");
+                            $('#fifthA').css("display", "none");                            
+                        });
+                    });
+                    </script>                     
+                    <script>
+                    $(function() {
+                        $('.img-show2A').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container2').css("display", "block");
+                            $('#secondA').css("display", "block");
+                            $('#firstA').css("display", "none");
+                            $('#thirdA').css("display", "none");
+                            $('#fourthA').css("display", "none");
+                            $('#fifthA').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show3A').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container2').css("display", "block");
+                            $('#thirdA').css("display", "block");
+                            $('#secondA').css("display", "none");
+                            $('#firstA').css("display", "none");
+                            $('#fourthA').css("display", "none");
+                            $('#fifthA').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show4A').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container2').css("display", "block");
+                            $('#fourthA').css("display", "block");
+                            $('#secondA').css("display", "none");
+                            $('#thirdA').css("display", "none");
+                            $('#firstA').css("display", "none");
+                            $('#fifthA').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show5A').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container2').css("display", "block");
+                            $('#fifthA').css("display", "block");
+                            $('#secondA').css("display", "none");
+                            $('#thirdA').css("display", "none");
+                            $('#fourthA').css("display", "none");
+                            $('#firstA').css("display", "none");
+                        });
+                    });
+                    </script>
+            <!-- End -->
+            
+            <!-- LIVING -->
+                    <script>
+                    function HideSec3() {
+                        var x = document.getElementById("immersive-container3");
+                        x.style.display="none";
+                        var img1 = document.getElementById("firstL");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("secondL");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("thirdL");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("fourthL");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("fifthL");
+                        img1.style.display="none";
+                    }
+                    </script>                   
+                    <script>
+                    $(function() {
+                        $('.img-showL').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container3').css("display", "block");
+                            $('#firstL').css("display", "block");
+                            $('#secondL').css("display", "none");
+                            $('#thirdL').css("display", "none");
+                            $('#fourthL').css("display", "none");
+                            $('#fifthL').css("display", "none");                            
+                        });
+                    });
+                    </script>                     
+                    <script>
+                    $(function() {
+                        $('.img-show2L').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container3').css("display", "block");
+                            $('#secondL').css("display", "block");
+                            $('#firstL').css("display", "none");
+                            $('#thirdL').css("display", "none");
+                            $('#fourthL').css("display", "none");
+                            $('#fifthL').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show3L').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container3').css("display", "block");
+                            $('#thirdL').css("display", "block");
+                            $('#secondL').css("display", "none");
+                            $('#firstL').css("display", "none");
+                            $('#fourthL').css("display", "none");
+                            $('#fifthL').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show4L').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container3').css("display", "block");
+                            $('#fourthL').css("display", "block");
+                            $('#secondL').css("display", "none");
+                            $('#thirdL').css("display", "none");
+                            $('#firstL').css("display", "none");
+                            $('#fifthL').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show5L').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container3').css("display", "block");
+                            $('#fifthL').css("display", "block");
+                            $('#secondL').css("display", "none");
+                            $('#thirdL').css("display", "none");
+                            $('#fourthL').css("display", "none");
+                            $('#firstL').css("display", "none");
+                        });
+                    });
+                    </script>
+            <!-- End -->
+            
+            <!-- DINING -->            
+                    <script>
+                    function HideSec4() {
+                        var x = document.getElementById("immersive-container4");
+                        x.style.display="none";
+                        var img1 = document.getElementById("firstD");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("secondD");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("thirdD");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("fourthD");
+                        img1.style.display="none";
+                        var img1 = document.getElementById("fifthD");
+                        img1.style.display="none";
+                    }
+                    </script>                   
+                    <script>
+                    $(function() {
+                        $('.img-showD').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container4').css("display", "block");
+                            $('#firstD').css("display", "block");
+                            $('#secondD').css("display", "none");
+                            $('#thirdD').css("display", "none");
+                            $('#fourthD').css("display", "none");
+                            $('#fifthD').css("display", "none");                            
+                        });
+                    });
+                    </script>                     
+                    <script>
+                    $(function() {
+                        $('.img-show2D').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container4').css("display", "block");
+                            $('#secondD').css("display", "block");
+                            $('#firstD').css("display", "none");
+                            $('#thirdD').css("display", "none");
+                            $('#fourthD').css("display", "none");
+                            $('#fifthD').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show3D').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container4').css("display", "block");
+                            $('#thirdD').css("display", "block");
+                            $('#secondD').css("display", "none");
+                            $('#firstD').css("display", "none");
+                            $('#fourthD').css("display", "none");
+                            $('#fifthD').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show4D').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container4').css("display", "block");
+                            $('#fourthD').css("display", "block");
+                            $('#secondD').css("display", "none");
+                            $('#thirdD').css("display", "none");
+                            $('#firstD').css("display", "none");
+                            $('#fifthD').css("display", "none");
+                        });
+                    });
+                    </script>
+                    <script>
+                    $(function() {
+                        $('.img-show5D').on('click', function(){
+                            var imgId = $(this).attr('data-img');
+                            $('#immersive-container4').css("display", "block");
+                            $('#fifthD').css("display", "block");
+                            $('#secondD').css("display", "none");
+                            $('#thirdD').css("display", "none");
+                            $('#fourthD').css("display", "none");
+                            $('#firstD').css("display", "none");
+                        });
+                    });
+                    </script>
+            <!-- End -->
     </body>
 </html>
     

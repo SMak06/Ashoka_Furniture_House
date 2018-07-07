@@ -19,6 +19,11 @@
     padding: 200px 0 200px 0;
     background-image: url("../img/table.jpg");
 }
+.conP{
+    margin-top: -300px;
+    padding: 200px 0 200px 0;
+    background-image: url("../img/table.jpg");
+}
 
 .con7{
     margin-top: -150px;
@@ -30,6 +35,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.con-im{
+    background-color: #202020;
+    margin-bottom: 100px;
 }
 
 .navbar{
