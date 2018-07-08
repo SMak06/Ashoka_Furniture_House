@@ -320,7 +320,7 @@ p.qsm{
 
 	#con1{
         /*width: 100%;*/
-		overflow:hidden;
+		
 	}
 	.de_testi1, .de_testi2, .de_testi3, .de_testi4, .de_testi5{width: inherit;
 			margin: 10px 0px 10px 0px;
