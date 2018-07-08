@@ -293,7 +293,6 @@ header.header-mobile{
     max-height: 150px;
 }
 .img:hover{
-    border-radius: 10px;
     opacity: 0.8;
 }
 
