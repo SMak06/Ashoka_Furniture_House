@@ -291,12 +291,10 @@ header.header-mobile{
     margin-left: 5px;
     max-width: 150px;
     max-height: 150px;
-
 }
 .img:hover{
     border-radius: 10px;
     opacity: 0.8;
-    transform: scale(0.95);
 }
 
 .subH{
